@@ -65,6 +65,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 58px;
+  padding-bottom: 128px;
   &__logo {
     font-family: Josefin Sans;
     text-decoration: none;
@@ -97,6 +98,67 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #AAAAAB;
+}
+
+.burger-menu_button {
+  display: block;
+  width: 24px;
+  height: 24px;
+ 
+}
+
+.burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines {
+
+position: absolute;
+width: 16px;
+height: 2px;
+background-color: #AAAAAB;
+top: 72px;
+}
+
+.burger-menu_lines::before {
+  content: '';
+  top: -4px;
+}
+.burger-menu_lines::after {
+  content: '';
+  top: 4px;
+}
+
+
+.main {
+  &__header{
+  margin: 0;
+  font-family: CircularStd;
+  font-weight:500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #F78CB6;
+  padding-bottom: 29px;
+  }
+  &__slogan {
+    display: block;
+    font-family: CircularStd;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: #56597A;
+    max-width: 599px;
+  }
+
+}
+
+.main__header::before{
+  content: "";
+  display: inline-block;
+  margin: 0;
+  vertical-align: bottom;
+  width: 36px;
+  height: 3px;
+  background-color: #F78CB6;
+ margin-right: 7px;
 }
 
 
