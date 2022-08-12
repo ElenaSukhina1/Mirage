@@ -36,7 +36,7 @@
 @font-face {
     font-family: ProximaNova;
     src: url(../fonts/ProximaNova-Bold.eot) format("eot"),
-         url(../fonts/ProximaNova-Regular.woff) format("woff");
+         url(../fonts/ProximaNova-Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;    
 }
@@ -228,6 +228,10 @@ top: 72px;
  left: 150px;
 }
 
+.services {
+  padding-bottom: 231px;
+}
+
 .services_header {
   padding: 0;
   margin-bottom: 6px;
@@ -308,6 +312,124 @@ top: 72px;
 .services-cards__img:hover > .services-cards__info > .services-cards__text {
   color: #FFF1F9;
 }
+
+.design {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 194px;
+  &__content {
+    padding: 0;
+    padding-left: 79px;
+    width: 100%;
+  }
+  &__header {
+    padding-bottom: 15px;
+  }
+  &__slogan {
+    font-size: 52px;
+    line-height: 62px;
+    padding-bottom: 24px;
+  }
+  &__text {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  &__btn {
+    width: 194px;
+    height: 58px;
+  }
+}
+
+.teamwork {
+  padding-bottom: 194px;
+  &__header {
+    padding-top: 41px;
+    padding-bottom: 15px;
+  }
+  &__content {
+    margin-right: 75px;
+  }
+  &__slogan {
+    font-size: 52px;
+    line-height: 62px;
+    padding-bottom: 24px;
+  }
+  &__text {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.reviews {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1069px;
+  padding-bottom: 163px;
+  &__portret {
+    margin-top: 13px;
+    margin-right: 137.21px;
+    width: 415.79px;
+    height: 418.62px;
+    background-color: #F78CB6;
+    border-radius: 8px;
+    position: relative;
+  }
+  &__header {
+    padding-bottom: 15px;
+  }
+  &__slogan{
+    font-size: 52px;
+    line-height: 62px;
+    max-width: 506px;
+    padding-bottom: 38px;
+  }
+  &__text {
+    max-width: 400px;
+    padding-bottom: 23px;
+  }
+  &__author {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #56597A;
+    padding-bottom: 5px;
+  }
+  &__country  {
+    font-size: 16px;
+    line-height: 32px;
+    color: #ABABAB;
+    padding-bottom: 0;
+  }
+  
+}
+.portret-img {
+  position: absolute;
+  top: 34.45px;
+  left: 53.25px;
+  
+}
+
+.coutry-arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+
 
 
 
