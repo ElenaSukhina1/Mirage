@@ -425,10 +425,10 @@ top: 72px;
 }
 
 .mail {
-  position: absolute;
+  position: relative;
   max-width: 1040px;
   display: flex;
-  left: 0;
+  left: -174px;
   &-content {
     width: 706px;
     
@@ -489,10 +489,66 @@ top: 72px;
   border: none;
   background: #F78CB6;
   color: #FFF1F9;
+  font-family: CircularStd;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 30px;
   border-radius: 5px;
   filter: drop-shadow(10px 10px 20px rgba(250, 141, 184, 0.2));
 
 }
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    display: block;
+    font-size: 36px;
+    padding-bottom: 38px;
+  }
+  &__text {
+    padding: 0;
+    letter-spacing: 2%;
+  }
+  &__social {
+    display: block;
+    padding-top: 38px;
+    padding-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: 2%;
+
+  }
+}
+
+.social {
+  display: flex;
+  &-icons {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 11px;
+  }
+}
+.inst {
+  background-image: url(../img/instagram.svg);
+   background-position: center;
+}
+.tw {
+  background-image: url(../img/twitter.svg);
+   background-position: center;
+}
+.video {
+  background-image: url(../img/video.svg);
+   background-position: center;
+}
+.fb {
+  background-image: url(../img/facebook.svg);
+   background-position: center;
+}
+
+
 
 
 
