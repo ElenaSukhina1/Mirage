@@ -41,7 +41,7 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   max-width: 1440px;
 }
@@ -563,12 +563,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-footer__logo {
   display: block;
   font-size: 36px;
   padding-bottom: 38px;
+  padding-top: 71px;
 }
 
 .main-footer__text {
@@ -584,6 +587,17 @@ body {
   letter-spacing: 2%;
 }
 
+.main-footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 673px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 27px;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,6 +609,9 @@ body {
   width: 41px;
   height: 41px;
   background-repeat: no-repeat;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   margin-right: 11px;
 }
@@ -617,5 +634,65 @@ body {
 .fb {
   background-image: url(../img/facebook.svg);
   background-position: center;
+}
+
+.footer-header {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 2%;
+  color: #56597A;
+  padding-top: 71px;
+  padding-bottom: 33px;
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.list-item_link {
+  display: block;
+  text-decoration: none;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2%;
+  color: #919299;
+  padding-bottom: 25px;
+}
+
+.footer-bg {
+  position: absolute;
+  margin-top: 46.02px;
+  left: 0;
+  z-index: -1;
+}
+
+.footer-bg-line {
+  position: absolute;
+  left: -15px;
+  z-index: -1;
+}
+
+.footer-bottom {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background-color: #F78CB6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-bottom_text {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

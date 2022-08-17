@@ -51,7 +51,7 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   max-width: 1440px;
 }
@@ -501,10 +501,12 @@ top: 72px;
 .main-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   &__logo {
     display: block;
     font-size: 36px;
     padding-bottom: 38px;
+    padding-top: 71px;
   }
   &__text {
     padding: 0;
@@ -518,6 +520,12 @@ top: 72px;
     letter-spacing: 2%;
 
   }
+  &__menu {
+    display: flex;
+    min-width: 673px;
+    justify-content: space-between;
+    padding-bottom: 27px;
+  }
 }
 
 .social {
@@ -527,6 +535,8 @@ top: 72px;
     width: 41px;
     height: 41px;
     background-repeat: no-repeat;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     margin-right: 11px;
   }
@@ -538,6 +548,7 @@ top: 72px;
 .tw {
   background-image: url(../img/twitter.svg);
    background-position: center;
+
 }
 .video {
   background-image: url(../img/video.svg);
@@ -548,6 +559,64 @@ top: 72px;
    background-position: center;
 }
 
+
+.footer-header {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 2%;
+  color: #56597A;
+  padding-top: 71px;
+  padding-bottom: 33px;
+  
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.list-item {
+  
+  &_link {
+  display: block;
+  text-decoration: none;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2%;
+  color:#919299;
+  padding-bottom: 25px;
+  }
+}
+
+.footer-bg {
+  position: absolute;
+  margin-top: 46.02px;
+  left: 0;
+  z-index: -1;
+
+  &-line {
+    position: absolute;
+    left: -15px;
+    z-index: -1;
+  }
+}
+.footer-bottom {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background-color:#F78CB6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom_text {
+  display: block;
+}
 
 
 
