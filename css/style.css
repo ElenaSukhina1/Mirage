@@ -694,5 +694,63 @@ body {
 
 .footer-bottom_text {
   display: block;
+  font-family: CircularStd;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2%;
+  color: #FFF1F9;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footer-bottom_lang {
+  display: block;
+  font-family: CircularStd;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #FFF1F9;
+  margin: auto 0;
+}
+
+.footer-bottom-cont {
+  margin: 0 auto;
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lang {
+  margin: auto 0;
+  margin-right: 13px;
+}
+
+.lang-link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-lang::after {
+  content: "";
+  background-image: url(../img/Down.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
