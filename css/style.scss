@@ -100,6 +100,10 @@ body {
   color: #AAAAAB;
 }
 
+.menu_item-link:hover {
+  color: #56597A;
+}
+
 .burger-menu_button {
   display: block;
   width: 24px;
@@ -214,6 +218,7 @@ top: 72px;
   height: 3px;
   background-color: #F78CB6;
   margin-right: 7px;
+  margin-bottom: 10px;
 }
 
 .main__btn-img::before{
@@ -334,10 +339,10 @@ top: 72px;
     margin: 0;
     padding-bottom: 40px;
   }
-  &__btn {
-    width: 194px;
-    height: 58px;
-  }
+  //&__btn {
+    //width: 194px;
+    //height: 58px;
+  //}
 }
 
 .teamwork {
@@ -425,12 +430,15 @@ top: 72px;
 }
 
 .mail {
-  position: relative;
-  max-width: 1040px;
+  //position: relative;
+  max-width: 710px;
   display: flex;
-  left: -174px;
+  margin: 0 auto;
+  //left: -174px;
   &-content {
     width: 706px;
+    position: relative;
+    
     
   }
   &__img {
@@ -452,6 +460,30 @@ top: 72px;
     padding-bottom: 15px;
   }
 }
+.mail-content::before {
+  content: "";
+  position: absolute;
+  left: -340px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-image: url(../img/Mail_Illustration.png);
+}
+
+.mail-content::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 328.98px;
+  height: 370.25px;
+  background-image: url(../img/Bloobs.svg);
+  background-repeat: no-repeat;
+  right: -500px;
+  top: -100px;
+  
+  
+}
+
 
 .mail-form-btn {
   width: 706px;
@@ -493,10 +525,16 @@ top: 72px;
   font-weight: 450;
   font-size: 20px;
   line-height: 30px;
+  padding-right: 50px;
   border-radius: 5px;
   filter: drop-shadow(10px 10px 20px rgba(250, 141, 184, 0.2));
-
+  background-image: url(../img/btn-img.svg);
+  background-repeat: no-repeat;
+  background-position: 121px;
+  background-size: 15%;
 }
+
+
 
 .main-footer {
   display: flex;
