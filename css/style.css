@@ -43,7 +43,10 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
+  max-width: 2500px;
+  background-image: url(../img/Vector_1.svg), url(../img/Vector_2.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .container {
@@ -136,7 +139,30 @@ body {
 
 .agency__content {
   padding-top: 35px;
-  padding-bottom: 139px;
+  padding-bottom: 192px;
+}
+
+.agency_img1 {
+  width: 532px;
+  height: 532px;
+  background-image: url(../img/Hero_Image.png);
+  background-repeat: no-repeat;
+}
+
+.agency_img2 {
+  margin: 0;
+  padding: 0;
+  width: 570px;
+  height: 542px;
+  background-image: url(../img/pluto-artist-workspace.png);
+  background-repeat: no-repeat;
+}
+
+.agency_img3 {
+  width: 587px;
+  height: 587px;
+  background-image: url(../img/Illustration.png);
+  background-repeat: no-repeat;
 }
 
 .main__header {
@@ -242,6 +268,26 @@ body {
 
 .services {
   padding-bottom: 231px;
+  position: relative;
+}
+
+.bg1 {
+  width: 196px;
+  height: 250px;
+  position: absolute;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  left: -270px;
+  top: 10px;
+}
+
+.bg2 {
+  width: 220px;
+  height: 270px;
+  position: absolute;
+  background-image: url(../img/Vector12.svg);
+  background-repeat: no-repeat;
+  left: -270px;
 }
 
 .services_header {
@@ -267,6 +313,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   vertical-align: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services-cards__img {
@@ -354,8 +402,8 @@ body {
 
 .design__content {
   padding: 0;
-  padding-left: 79px;
-  width: 100%;
+  margin-left: 79px;
+  max-width: 500px;
 }
 
 .design__header {
@@ -384,6 +432,7 @@ body {
 
 .teamwork__content {
   margin-right: 75px;
+  max-width: 500px;
 }
 
 .teamwork__slogan {
@@ -477,6 +526,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 83px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mail {
@@ -488,7 +539,7 @@ body {
 }
 
 .mail-content {
-  width: 706px;
+  max-width: 706px;
   position: relative;
 }
 
@@ -522,22 +573,8 @@ body {
   background-image: url(../img/Mail_Illustration.png);
 }
 
-.vector {
-  position: absolute;
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.vector-img {
-  position: relative;
-  margin-left: auto;
-  right: -150px;
-}
-
 .mail-form-btn {
-  width: 706px;
+  max-width: 706px;
   height: 82px;
   -webkit-box-shadow: 20px 20px 40px rgba(205, 205, 205, 0.25);
           box-shadow: 20px 20px 40px rgba(205, 205, 205, 0.25);
@@ -621,11 +658,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 673px;
+  width: 673px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 27px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social {
